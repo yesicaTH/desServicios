@@ -1,0 +1,51 @@
+//*****************************************
+primero lo primero haga el init
+npm init
+//****************************************
+crear las carpetas
+src
+se crean dentro de src
+configuracion
+controladores
+daos
+middleware
+modelos
+repositorios
+rutas
+index.ts
+
+//***************************************
+y ahora a instalar paquetes !!!!
+npm i cors
+npm i morgan
+npm i express
+npm i jsonwebtoken
+npm i pg-promise
+
+npm i @types/cors --save-dev
+npm i @types/morgan --save-dev
+npm i @types/express --save-dev
+npm i @types/jsonwebtoken --save-dev
+npm i nodemon --save-dev
+
+equivocacion: npm uninstall el paquete
+//**************************************
+Ahora vamos a crear nuestos propios scripts package.json
+
+    "dev": "nodemon build/index.js",
+    "build": "tcs -w"
+
+//***************************
+usaremos TypeScript
+si no funciona ejecutar desde CMD 
+tsc --init
+
+//***********************************
+en el tsconfig.json asegurarse de en tsconfig.json linea 50
+"outDir": "./build",  
+//********************************
+correr
+1.
+npm run build
+2.
+npm run dev
